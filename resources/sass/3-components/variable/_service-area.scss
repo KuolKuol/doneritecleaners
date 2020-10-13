@@ -1,0 +1,203 @@
+.service-area {
+    background-color: #14287b;
+    .service-area__container {
+        // title
+        padding:75px 0px;
+        .service-area__title {
+            text-align: center;
+            margin-bottom:50px;
+            text-transform: uppercase;
+            .service-area__title__link {
+                color: white;
+                text-decoration: none;
+            }
+        }   
+        // service boxes
+        .service-area__panels {
+            .service-area__panel__group {
+                .service-area__panel {
+                    background-color: white;
+                    border-radius: 4px;
+                    .service-area__image {
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                    }
+                    .service-area__panel__content {
+                        .service-area__panel__title {
+
+                        }
+                        .service-area__panel-description {
+
+                        }
+                        .service-area__panel__button {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media($phone){
+        .service-area__container {
+            // title
+            .service-area__title {
+    
+                .service-area__title__link {
+                    font-size: 1.5em;
+                }
+            }      
+            // service boxes
+            .service-area__panels {
+                .service-area__panel__group {
+                    .service-area__panel {
+                        margin-top:20px;
+                        margin-bottom:20px;
+                        display: -webkit-box; 
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex; 
+                        display: flex;
+                        -webkit-box-align: center;
+                        -moz-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;                        
+                        .service-area__image {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        .service-area__panel__content {
+                            padding: 0px 25px;
+                            .service-area__panel__title {
+                                font-size: 16px;
+                            }
+                            .service-area__panel-description {
+                                font-size: 12px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                            }
+                            .service-area__panel__button {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include media($tablet){
+        .service-area__container {
+            // title
+            .service-area__title {
+    
+                .service-area__title__link {
+                    font-size: 1.8em;
+                }
+            }      
+            // service boxes
+            .service-area__panels {
+                .service-area__panel__group {
+                    .service-area__panel {
+                        margin-top:30px;
+                        margin-bottom:30px;
+                        display: -webkit-box; 
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex; 
+                        display: flex;
+                        -webkit-box-align: center;
+                        -moz-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;                        
+                        .service-area__image {
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .service-area__panel__content {
+                            padding: 0px 25px;
+                            .service-area__panel__title {
+                                font-size: 20px;
+                            }
+                            .service-area__panel-description {
+                                font-size: 15px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                            }
+                            .service-area__panel__button {
+                                font-size: 12px;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include media($desktop){
+        .service-area__container {
+            // title
+            .service-area__title {
+    
+                .service-area__title__link {
+                    font-size: 1.8em;
+                }
+            }      
+            // service boxes
+            .service-area__panels {
+                .service-area__panel__group {
+                    display: -webkit-box; 
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex; 
+                    display: flex;
+
+                    -webkit-box-pack: justify;                    
+                    -ms-flex-pack: justify;                    
+                    justify-content: space-between; 
+
+                    .service-area__panel {
+                        margin-top:10px;
+                        margin-bottom:30px;
+                        display: -webkit-box; 
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex; 
+                        display: flex;
+                        -webkit-box-align: center;
+                        -moz-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        
+                        max-width: 49%;
+                        .service-area__image {
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .service-area__panel__content {
+                            padding: 0px 25px;
+                            .service-area__panel__title {
+                                font-size: 20px;
+                            }
+                            .service-area__panel-description {
+                                font-size: 15px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                            }
+                            .service-area__panel__button {
+                                font-size: 12px;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
